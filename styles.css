@@ -1,0 +1,177 @@
+
+/* Resetting default browser styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  text-align: center;
+  background-color: #f0f0f0; /* Slightly off-white background */
+}
+
+header, nav, main, footer {
+  padding: 20px;
+}
+
+header {
+  background-color: #005B96; /* Blue header */
+  color: white;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: black; /* Black links */
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #FF6B6B; /* Lighter red on hover */
+}
+
+main {
+  min-height: 200vh; /* Set main height to 400vh */
+}
+
+section {
+  padding: 80px 20px; /* Adjusted padding */
+  border-radius: 10px;
+  max-width: 800px; /* Set maximum width */
+  margin: 50px auto; /* Center align and reduce space between sections */
+}
+
+#about {
+  background-color: #D3D3D3; /* Light gray */
+}
+
+#projects {
+  background-color: #ff0000; /* Light red */
+  text-align: center;
+}
+
+#skills {
+  background-color: #F4D35E; /* Yellow */
+  line-height: 3;
+}
+
+#skills h2{
+  color: black;
+}
+
+#skills ul {
+  list-style-type: none;
+}
+
+#skills ul li::before {
+  content: "\2022"; /* Add bullet point */
+  color: black;
+  font-size: 20px;
+  font-weight: bolder;
+  margin-right: 10px;
+}
+
+#contact {
+  background-color: black; /* Black background */
+  color: white; /* White text */
+}
+
+#contact ul {
+  list-style-type: none;
+}
+
+#contact ul li::before {
+  content: "\2022"; /* Add bullet point */
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+#contact a {
+  color: rgb(255, 255, 255); /* Black links in contact section */
+}
+
+h2 {
+  color: rgb(255, 255, 255); /* Black headings */
+}
+
+.project {
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+  overflow: hidden;
+}
+
+.project img {
+  transition: transform 0.5s ease;
+}
+
+.project:hover img {
+  transform: scale(1.1);
+}
+
+.project h3 {
+  margin-top: 10px;
+  color: black; /* Black headings */
+}
+
+.project p {
+  color: black; /* Black text */
+}
+
+footer {
+  background-color: #005B96; /* Blue footer */
+  color: white;
+}
+
+
+#contact p {
+  margin-bottom: 10px; /* Add margin bottom */
+}
+
+
+img{
+  width: 70%;
+  height: 50%;
+  border-radius: 20px;
+}
+
+.see{
+  width: 70%;
+  height: 50%;
+  border-radius: 50%;
+}
+
+/* Scroll to top button styles */
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #000000; /* Purple button */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+  z-index: 1000; /* Ensure it's above other elements */
+  display: none; /* Initially hidden */
+}
+
+#back-to-top:hover {
+  background-color: blue;
+}
